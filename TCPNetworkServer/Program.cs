@@ -16,12 +16,13 @@ namespace TCPNetworkServer
         {
             public static void Main()
             {
+                string[] dataSamples = new string[] { "G01S01\r", "G01S02\r", "G01S03\r", "G02S01\r", "G02S02\r", "G02S03\r", "G02S04\r", "G03S01\r" };
                 TcpListener server = null;
                 try
                 {
                     // Set the TcpListener on port 13000.
                     Int32 port = 13000;
-                    IPAddress localAddr = IPAddress.Parse("10.1.1.12");
+                    IPAddress localAddr = IPAddress.Parse("10.1.1.209");
 
                     // TcpListener server = new TcpListener(port);
                     server = new TcpListener(localAddr, port);
@@ -58,7 +59,8 @@ namespace TCPNetworkServer
                             Console.WriteLine("Received: {0}", data);
 
                             // Process the data sent by the client.
-                            data = "END\r";
+                            Random random = new Random();
+                            data = dataSamples[random.Next(0, dataSamples.Length)];
 
                             byte[] msg = System.Text.Encoding.ASCII.GetBytes(data);
 
@@ -68,7 +70,6 @@ namespace TCPNetworkServer
 
                             stream.Write(msg, 0, msg.Length);
                             Console.WriteLine($"Sent: { data }  ");
-
                         }
 
                         // Shutdown and end connection

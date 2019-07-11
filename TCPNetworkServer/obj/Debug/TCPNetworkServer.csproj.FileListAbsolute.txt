@@ -1,0 +1,7 @@
+C:\Users\LP\Documents\TCPCommsServer\TCPNetworkServer\bin\Debug\TCPNetworkServer.exe.config
+C:\Users\LP\Documents\TCPCommsServer\TCPNetworkServer\bin\Debug\TCPNetworkServer.exe
+C:\Users\LP\Documents\TCPCommsServer\TCPNetworkServer\bin\Debug\TCPNetworkServer.pdb
+C:\Users\LP\Documents\TCPCommsServer\TCPNetworkServer\obj\Debug\TCPNetworkServer.csprojAssemblyReference.cache
+C:\Users\LP\Documents\TCPCommsServer\TCPNetworkServer\obj\Debug\TCPNetworkServer.csproj.CoreCompileInputs.cache
+C:\Users\LP\Documents\TCPCommsServer\TCPNetworkServer\obj\Debug\TCPNetworkServer.exe
+C:\Users\LP\Documents\TCPCommsServer\TCPNetworkServer\obj\Debug\TCPNetworkServer.pdb
