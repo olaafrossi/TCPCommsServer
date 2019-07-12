@@ -16,7 +16,7 @@ namespace TCPNetworkServer
         {
             public static void Main()
             {
-                string[] dataSamples = new string[] { "G01S01\r", "G01S02\r", "G01S03\r", "G02S01\r", "G02S02\r", "G02S03\r", "G02S04\r", "G03S01\r" };
+                string[] dataSamples = new string[] { "G00S00\r", "G00S01\r", "G01S00\r", "G01S01\r", "G01S02\r" };
                 TcpListener server = null;
                 try
                 {
